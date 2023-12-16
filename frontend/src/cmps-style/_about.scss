@@ -1,0 +1,21 @@
+.about-title {
+  margin-top: 50px;
+  color: rgb(252 181 50);
+  text-align: center;
+}
+
+.about-p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #f8f8f8;
+  padding-inline: 5%;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.3rem;
+  }
+  .about-p {
+    font-size: 1rem;
+  }
+}

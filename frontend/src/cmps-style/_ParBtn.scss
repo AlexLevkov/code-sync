@@ -1,0 +1,35 @@
+.par-cmp{
+  padding: 15px;
+  color: #cccccc;
+  button{
+    padding: 0;
+    color: #cccccc;
+    margin-top:10px;
+    margin-bottom: 10px;
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+.participant{
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.green-circle{
+  align-self: center;
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 0 0 10px green;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.user-type-par{
+  // padding-bottom: 5px;
+}

@@ -1,0 +1,37 @@
+.class-room-modal-cmp{
+
+  .modal-content{
+    background-color: #565151!important;
+    color: wheat
+
+  }
+ 
+  .modal-body{
+    display: flex;
+    align-items: center;
+    #checkbox{
+      margin-left: 15px;
+    }
+  }
+
+  .modal-footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  button{
+    border: #565151;
+    background-color: black;
+    color: white;
+    &:hover{
+      background-color: black;
+      opacity: 0.9;
+    }
+    &:disabled{
+      background-color: #353131;
+      color: white;
+    }
+  }
+
+}

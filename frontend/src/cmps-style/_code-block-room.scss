@@ -1,0 +1,51 @@
+.code-block-cmp{
+  margin-inline: 50px;
+  h2{
+    text-align: center;
+    color: wheat;
+  }
+}
+
+.code-block-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.student-code-content,.mentor-code-content,.hint-code-content{
+  height: 60vh;
+  width: 60vw;
+  margin: 0!important;
+  border-radius: 15px;
+}
+
+.code-title{
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+// @media (max-width: 480px) {
+//   .code-block-container{
+//     flex-direction: column;
+//     background-color: red;
+//   }
+// }
+
+@media (max-width: 480px){
+  .code-block-container{
+    flex-direction: column;
+  }
+  .student-code-content,.mentor-code-content,.hint-code-content{
+    width: 80Vw;
+  }
+    
+}

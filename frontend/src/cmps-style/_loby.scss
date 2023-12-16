@@ -1,0 +1,55 @@
+.lesson-container{
+  margin: 70px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  border-radius: 10px;
+}
+
+.lesson-card{
+  position: relative;
+  border-radius: 10px;
+  padding: 15px;
+    color: white;
+  background-color: #333;
+  width: 40%;
+  height: 200px;
+  a{
+    color: wheat
+  };
+}
+
+
+
+.delete-btn {
+  color: wheat;
+  background-color: transparent;
+  margin-left: auto;
+  border-radius: 50%;
+  border: none;
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.lesson-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading-txt{
+  color: wheat;
+  margin-top: 20%;
+  text-align: center;
+}
+
+
+@media (max-width: 480px){
+  .lesson-card{
+    width: 100%;
+  }
+}
