@@ -10,7 +10,7 @@ import { useQuery } from "react-query";
 function App() {
   const socketLink = "http://localhost:3030";
   // process.env.NODE_ENV === "production" ? "/" : "http://localhost:3030";
-  const httpLink = "http://localhost:3030/api/exercises";
+  const httpLink = "http://localhost:2000/api/exercises";
   // process.env.NODE_ENV === "production";
   // ? "/api/exercises"
   // : "http://localhost:3030/api/exercises";
