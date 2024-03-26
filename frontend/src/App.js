@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  HashRouter as Router,
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { Link } from "react-router-dom";
 import Lobby from "./cmps/Lobby.js";
 import CodeBlockRoom from "./cmps/CodeBlockRoom";
@@ -44,7 +49,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <Router>
       <nav>
         <Link className="nav-link-main logo" to="/">
           <span>CodeSync</span>
@@ -99,7 +104,7 @@ function App() {
           Loading...
         </h1>
       )}
-    </BrowserRouter>
+    </Router>
   );
 }
 
