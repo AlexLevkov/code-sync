@@ -14,7 +14,6 @@ const Chat=({socketLink,studentOnline,mentorOnline,userName,userArr,setUserArr})
     const socket = io(socketLink)
     setSocket(socket)
     socket.on('message-update', (message) => {
-      // console.log('message:', message)
       setMessages((prevMessages) => [...prevMessages, message])
     })
 

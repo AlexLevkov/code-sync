@@ -1,37 +1,46 @@
-.class-room-modal-cmp{
-
-  .modal-content{
-    background-color: #565151!important;
-    color: wheat
-
+.class-room-modal-cmp {
+  .modal-content {
+    background-color: #565151 !important;
+    color: wheat;
+    width: 350px;
+    max-width: 40vw;
+    margin-top: 50px;
   }
- 
-  .modal-body{
+
+  .modal-body {
     display: flex;
     align-items: center;
-    #checkbox{
+    justify-content: center;
+
+    #checkbox {
       margin-left: 15px;
     }
   }
 
-  .modal-footer{
+  .modal-dialog {
+    width: fit-content;
+  }
+
+  .modal-title {
+    margin: auto;
+  }
+
+  .modal-footer {
     display: flex;
     justify-content: space-between;
   }
 
-
-  button{
+  button {
     border: #565151;
     background-color: black;
     color: white;
-    &:hover{
+    &:hover {
       background-color: black;
       opacity: 0.9;
     }
-    &:disabled{
+    &:disabled {
       background-color: #353131;
       color: white;
     }
   }
-
 }
