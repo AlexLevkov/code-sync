@@ -69,6 +69,20 @@ nav {
   gap: 6px;
 }
 
+.circle {
+  border-radius: 50%; /* Makes the div a circle */
+  animation: circle-animation 100s infinite linear; /* Attach the animation */
+}
+
+@keyframes circle-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .nav-links {
   display: flex;
   justify-content: flex-end;

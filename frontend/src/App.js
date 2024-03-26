@@ -48,7 +48,7 @@ function App() {
       <nav>
         <Link className="nav-link-main logo" to="/">
           <span>CodeSync</span>
-          <i className="fa-solid fa-rotate"></i>
+          <i className={`fa-solid fa-rotate circle`}></i>
         </Link>
         {/* <Link className="nav-link-main" to="/">
           Home
