@@ -8,8 +8,8 @@ import About from "./cmps/About.js";
 import { useQuery } from "react-query";
 
 function App() {
-  // const socketLink = "http://localhost:2000/cs";
-  const socketLink = "https://central-server-81cq.onrender.com/cs";
+  const socketLink = "http://localhost:2000/cs";
+  // const socketLink = "https://central-server-81cq.onrender.com/cs";
 
   // process.env.NODE_ENV === "production" ? "/" : "http://localhost:3030";
   // const httpLink = "http://localhost:2000/api/exercises";

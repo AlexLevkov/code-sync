@@ -46,7 +46,7 @@ a {
   font-size: 1.3rem;
   &:hover {
     cursor: pointer;
-    color: rgb(252, 181, 50) !important;
+    // color: red !important;
   }
 }
 
@@ -72,6 +72,10 @@ nav {
 .nav-links {
   display: flex;
   justify-content: flex-end;
+}
+
+pre {
+  margin: 1.5em 0px !important;
 }
 
 @media (max-width: 768px) {
