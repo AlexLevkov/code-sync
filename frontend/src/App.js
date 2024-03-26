@@ -11,6 +11,7 @@ import CodeBlockRoom from "./cmps/CodeBlockRoom";
 import AddLessonForm from "./cmps/AddLessonForm.js";
 import About from "./cmps/About.js";
 import { useQuery } from "react-query";
+import img from "./imgs/giphy.gif";
 
 function App() {
   // const socketLink = "http://localhost:2000/cs";
@@ -65,8 +66,8 @@ function App() {
           Get Started
         </Link> */}
       </nav>
-
-      <Routes>
+      <img className="sm-img" src={img} alt="img" />
+      <Routes className="router">
         <Route
           exact
           path="/"

@@ -88,12 +88,23 @@ nav {
   justify-content: flex-end;
 }
 
+.sm-img {
+  display: none;
+}
+
 pre {
   margin: 1.5em 0px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .nav-link-main {
     font-size: 1rem;
+  }
+  .lesson-container,
+  .code-block-cmp {
+    display: none !important;
+  }
+  .sm-img {
+    display: block;
   }
 }
