@@ -53,3 +53,11 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .modal-body {
+    input {
+      width: 100%;
+    }
+  }
+}
