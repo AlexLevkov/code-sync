@@ -1,0 +1,22 @@
+.lesson-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 90vw;
+  height: 60vh;
+}
+
+.chat-par-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $clr3;
+  height: 60vh;
+  width: 30vw;
+  border-radius: 15px;
+}
+
+.code-section {
+  max-width: 55vw;
+}

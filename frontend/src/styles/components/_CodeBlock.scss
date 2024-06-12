@@ -1,0 +1,36 @@
+.code-block-wrapper {
+  width: inherit;
+  display: block;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: $clr3;
+  width: 100%;
+
+  .CodeMirror {
+    width: 100%;
+    height: 100% !important;
+    max-width: 55vw;
+    background-color: $clr3 !important;
+    height: fit-content;
+    & > {
+      overflow-y: hidden;
+    }
+  }
+
+  pre::-webkit-scrollbar,
+  .CodeMirror::-webkit-scrollbar,
+  .CodeMirror-scrollbar-filler,
+  .CodeMirror-vscrollbar,
+  .CodeMirror-hscrollbar {
+    display: none !important;
+  }
+
+  pre {
+    width: 100%;
+    overflow: initial;
+  }
+}
+
+.code-editor {
+  z-index: -1;
+}

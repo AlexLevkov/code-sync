@@ -1,0 +1,58 @@
+.over-lay {
+  background: black;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.dialog-modal {
+  z-index: 20;
+  border: none;
+  border-radius: 10px;
+  background-color: $clr3;
+  color: $clr10;
+  padding: 20px;
+  min-width: 300px;
+
+  h3 {
+    margin: 10px 0 0 0;
+  }
+
+  input:focus {
+    box-shadow: 0 0 0 0.25rem $clr2;
+    border-color: $clr2;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: $clr2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  svg {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 20px;
+    &:hover {
+      color: $clr10;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-btn-box {
+  display: flex;
+  justify-content: space-between;
+}

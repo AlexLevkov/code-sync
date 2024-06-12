@@ -1,0 +1,27 @@
+.hero-section-cmp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin: 0% 10%;
+}
+
+.title-typed-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.title-slogan {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub-title-slogan {
+  margin: 0;
+  text-align: center;
+}
+
+.public-title {
+  margin-bottom: 20px;
+}

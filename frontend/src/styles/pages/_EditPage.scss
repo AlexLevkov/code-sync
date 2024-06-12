@@ -1,0 +1,33 @@
+.edit-page {
+  form {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  input,
+  input:focus {
+    margin: 0 auto 30px;
+    font-size: 22px;
+    background-color: $clr3;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    color: $clr10;
+  }
+
+  input::placeholder {
+    color: #958272;
+  }
+
+  .code-block {
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}

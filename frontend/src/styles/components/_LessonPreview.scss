@@ -1,0 +1,42 @@
+.lesson-preview-item {
+  border-radius: 10px;
+  height: 220px;
+  min-width: 300px;
+  background-color: $clr2;
+  padding: 20px;
+  // overflow: hidden;
+
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .code-block-wrapper {
+    position: relative;
+    z-index: -10;
+    height: 70%;
+  }
+}
+
+.settings-icon {
+  font-size: 30px;
+  &:hover {
+    animation: rotate 3s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

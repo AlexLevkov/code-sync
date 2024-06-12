@@ -1,0 +1,33 @@
+.control-cmp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 90vw;
+  line-height: 50px;
+  margin: 25px auto 30px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: $clr3;
+}
+
+.control-box {
+  display: flex;
+  align-items: baseline;
+  font-size: 25px;
+  gap: 25px;
+
+  .copy-svg {
+    font-size: 27px;
+  }
+
+  svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.lesson-title {
+  text-align: center;
+  margin: 0;
+}

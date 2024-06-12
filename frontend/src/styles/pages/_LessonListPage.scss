@@ -1,0 +1,13 @@
+.lessons-preview-section {
+  margin: 1% 10%;
+}
+
+.lessons-preview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.animated-code-cmp {
+  display: none;
+}

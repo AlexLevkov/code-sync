@@ -1,0 +1,55 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  padding-inline: 30px;
+  font-size: 30px;
+
+  span {
+    font-size: 35px;
+  }
+
+  svg {
+    font-size: 21px;
+    margin-inline: 3px;
+    margin-bottom: 3px;
+  }
+
+  .create-svg {
+    margin-right: 5px;
+  }
+
+  .logo-link:hover {
+    .circle-svg {
+      animation: circle-animation 2s infinite linear;
+    }
+  }
+
+  .circle-svg {
+    animation: circle-animation 80s infinite linear;
+  }
+
+  .create-link {
+    span {
+      font-size: 25px;
+    }
+    color: $clr1;
+    background: $clr10;
+    border-radius: 15px;
+    padding: 2px 13px 4px;
+    opacity: 0.9;
+    &:hover {
+      opacity: 10;
+    }
+  }
+}
+
+@keyframes circle-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
