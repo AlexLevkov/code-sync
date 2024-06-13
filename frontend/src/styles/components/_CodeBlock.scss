@@ -34,3 +34,11 @@
 .code-editor {
   z-index: -1;
 }
+
+@media (max-width: 600px) {
+  .code-block-wrapper {
+    .CodeMirror {
+      max-width: unset;
+    }
+  }
+}
