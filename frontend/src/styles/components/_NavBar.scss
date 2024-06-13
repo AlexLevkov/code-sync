@@ -1,6 +1,7 @@
 .nav-bar {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
   padding-inline: 30px;
   padding-top: 20px;
@@ -16,21 +17,29 @@
     margin-bottom: 3px;
   }
 
+  // logo-link
+
+  .logo-link {
+    .circle-svg {
+      animation: circle-animation 80s infinite linear;
+    }
+
+    &:hover {
+      .circle-svg {
+        animation: circle-animation 2s infinite linear;
+      }
+    }
+  }
+
+  // new project-link
+
   .create-svg {
     margin-right: 5px;
   }
 
-  .logo-link:hover {
-    .circle-svg {
-      animation: circle-animation 2s infinite linear;
-    }
-  }
-
-  .circle-svg {
-    animation: circle-animation 80s infinite linear;
-  }
-
   .create-link {
+    display: flex;
+    align-items: center;
     span {
       font-size: 25px;
     }
@@ -51,5 +60,29 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    .logo-link {
+      line-height: 12px;
+      span {
+        font-size: 20px;
+      }
+      svg {
+        font-size: 12px;
+        margin-inline: 3px;
+        margin-top: 8px;
+      }
+    }
+    .create-link {
+      line-height: 12px;
+      padding: 3px 7px 2px 3px;
+      span,
+      svg {
+        font-size: 18px;
+      }
+    }
   }
 }

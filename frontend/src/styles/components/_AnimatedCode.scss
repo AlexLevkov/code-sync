@@ -14,6 +14,14 @@
   align-self: end;
 }
 
+@media (max-width: 600px) {
+  [data-testid="react-typed"] {
+    font-size: 13px;
+    min-width: auto;
+    align-self: unset;
+  }
+}
+
 .typed-code {
   white-space: pre-line;
   font-size: 18px;

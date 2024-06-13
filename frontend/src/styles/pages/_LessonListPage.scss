@@ -11,3 +11,15 @@
 .animated-code-cmp {
   display: none;
 }
+
+@media (max-width: 900px) {
+  .lessons-preview-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lessons-preview-container {
+    grid-template-columns: 1fr;
+  }
+}
