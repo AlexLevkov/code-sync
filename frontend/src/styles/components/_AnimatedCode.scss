@@ -17,7 +17,7 @@
 @media (max-width: 600px) {
   [data-testid="react-typed"] {
     font-size: 13px;
-    min-width: auto;
+    min-width: 280px;
     align-self: unset;
   }
 }

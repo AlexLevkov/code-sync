@@ -5,7 +5,7 @@ import LessonPage from "./pages/LessonPage";
 import EditPage from "./pages/EditPage";
 import Navbar from "./components/Navbar";
 // router and store
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fetchLessons } from "./app/store/actions/lessons-action.ts";
 import { AppDispatch } from "./app/store/store";
@@ -22,7 +22,7 @@ const App: React.FC = () => {
   }, [dispatch]);
 
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<LessonsListPage />} />
@@ -30,7 +30,7 @@ const App: React.FC = () => {
         <Route path="/edit/:id?" element={<EditPage />} />
         <Route path="/*" element={<h1>404</h1>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
