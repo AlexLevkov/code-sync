@@ -50,20 +50,24 @@ const LessonPage: React.FC = () => {
 
   useEffect(() => {
     if (userName) {
-      socketService.emit("user:update", { userName });
+      socketService.emit("room:join", lesson.title, { userName });
     }
   }, [userName]);
 
   const handleCodeChange = (_: any, content: string) => {
     const title = lesson?.title;
     if (lesson) {
-      socketService.emit("code:update", { title, content, _id: lesson._id });
+      socketService.emit("code:update", lesson.title, {
+        title,
+        content,
+        _id: lesson._id,
+      });
     }
   };
 
   const handleChatMessage = (message: string) => {
     setMessages((pv) => [...pv, { message, userName }]);
-    socketService.emit("chat:update", { userName, message });
+    socketService.emit("chat:update", lesson.title, { userName, message });
   };
   const handleUserUpdate = (userName: string) => {
     dispatch(userActions.addUser(userName));

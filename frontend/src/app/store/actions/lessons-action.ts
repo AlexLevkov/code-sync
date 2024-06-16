@@ -54,7 +54,6 @@ export const fetchLesson = (id: string) => {
 
 export const saveLesson = ({ lessonToEdit }: SaveLessonArgs) => {
   return async (dispatch: AppDispatch) => {
-    console.log("lessonToEdit:", lessonToEdit);
     try {
       // PUT request
       if (lessonToEdit._id) {

@@ -13,8 +13,14 @@ const lessonsSlice = createSlice({
     updateLesson(state, action) {
       let { _id, content, title } = action.payload;
       const index = state.lessonList.findIndex((lesson) => lesson._id === _id);
-      state.lessonList[index].content = content;
-      state.lessonList[index].title = title;
+      if (index !== -1) {
+        const updatedLesson = { ...state.lessonList[index], content, title };
+        state.lessonList = [
+          ...state.lessonList.slice(0, index),
+          updatedLesson,
+          ...state.lessonList.slice(index + 1),
+        ];
+      }
     },
     createLesson(state, action) {
       const newLesson = action.payload;

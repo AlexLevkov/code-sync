@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+// code-mirror
 import { Controlled as CodeBlock } from "react-codemirror2";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/monokai.css";
 import "codemirror/mode/javascript/javascript";
+// types
 import { CodeEditorProps } from "../types";
+import { Editor } from "codemirror";
 
 const CodeEditor: React.FC<CodeEditorProps> = ({
   content,
@@ -44,6 +47,14 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
     lineWrapping: false,
     autoScroll: false,
     lint: false,
+    extraKeys: {
+      Enter: function (cm: Editor) {
+        cm.replaceSelection("\n", "end");
+      },
+      Tab: function (cm: Editor) {
+        cm.replaceSelection("  ", "end");
+      },
+    },
   };
 
   if (customOptions) {
