@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// cmps
+// components
 import LessonsListPage from "./pages/LessonsListPage";
 import LessonPage from "./pages/LessonPage";
 import EditPage from "./pages/EditPage";
@@ -17,6 +17,7 @@ const App: React.FC = () => {
 
   useNotification();
 
+  // move it to the home page only to avoid fetching all the lessons when not necessary
   useEffect(() => {
     dispatch(fetchLessons());
   }, [dispatch]);

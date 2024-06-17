@@ -1,6 +1,7 @@
 import { io, Socket } from "socket.io-client";
 
 // const SOCKET_SERVER_URL = "http://localhost:2000/cs";
+// put if statement here instead of comment and uncomment every time
 const SOCKET_SERVER_URL = "https://central-server.alexlevkov.com/cs";
 
 class SocketService {

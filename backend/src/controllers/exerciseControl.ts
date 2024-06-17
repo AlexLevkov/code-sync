@@ -4,8 +4,11 @@ import Exercise from "../models/exerciseModel";
 
 export const getExs = async (req: Request, res: Response) => {
   try {
+    // no short-abbreviation
     const exs = await Exercise.find({});
     if (!exs) {
+
+      // change to 204
       return res.status(404).json({ error: "Not Found" });
     }
     res.status(200).json(exs);

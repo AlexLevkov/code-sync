@@ -1,4 +1,6 @@
 import { Router, Request, Response } from "express";
+// don't use short-abbreviations unless known by the industry as a whole for example "res = response" in express
+// context or "req", "num".
 import {
   getExs,
   getEx,

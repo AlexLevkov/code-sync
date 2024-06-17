@@ -1,5 +1,7 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
 
+// it's a good practice to separate db initialization to a different file
+
 const csDb = mongoose.createConnection(process.env.MONG_URI_CS!);
 
 interface IExercise extends Document {

@@ -16,6 +16,8 @@ import UserModal from "../components/UserModal.tsx";
 import { Message, User, Lesson, RootState } from "../types.ts";
 import { AppDispatch } from "../app/store/store";
 
+// remove comments from imports
+
 const LessonPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useDispatch<AppDispatch>();
@@ -72,6 +74,10 @@ const LessonPage: React.FC = () => {
   const handleUserUpdate = (userName: string) => {
     dispatch(userActions.addUser(userName));
   };
+
+  /*
+    Personally I'd extract all business logic (non ui logic to a hook)
+   */
 
   return (
     <>

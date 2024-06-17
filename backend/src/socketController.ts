@@ -21,7 +21,11 @@ type UserUpdate = {
 };
 
 export function setupSocket(io: Server) {
+  // fix any
   let rooms: any = {};
+
+
+  // exttract to functions
 
   const csNamespace = io.of("/cs");
   csNamespace.on("connection", (socket: Socket) => {
@@ -60,4 +64,12 @@ export function setupSocket(io: Server) {
       console.log("disconnect " + socket.id);
     });
   });
+}
+
+function onRoomJoined() {
+  //
+}
+
+function handleDisconnect() {
+
 }
