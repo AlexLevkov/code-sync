@@ -24,6 +24,8 @@
 @media (max-width: 600px) {
   .lesson-wrapper {
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 60px;
   }
   .chat-par-section,
   .chat-cmp {

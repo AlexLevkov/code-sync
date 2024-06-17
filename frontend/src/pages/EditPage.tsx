@@ -76,7 +76,7 @@ const EditPage: React.FC = () => {
 
   return (
     <div className="edit-page animate__animated animate__fadeIn">
-      <h1>Edit Code</h1>
+      <h1 className="edit-title">Edit Code</h1>
       <DeleteModal
         lessonName={lessonToEdit?.title}
         onDelete={deleteLesson}
