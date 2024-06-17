@@ -4,14 +4,15 @@ This is a real-time code editing web app that allows multiple users to collabora
 
 ## 📋 Table of Contents
 
-1. [Live Demo](#live-demo)
-2. [Features](#features)
-3. [Usage](#usage)
-4. [Installation](#installation)
-5. [Tech Stack](#tech-stack)
-6. [Architecture](#architecture)
-7. [License](#license)
-8. [Contact](#contact)
+1. [Live Demo](#-live-demo)
+2. [Features](#-features)
+3. [Usage](#-usage)
+4. [Installation](#-installation)
+5. [Tech Stack](#-tech-stack)
+6. [Architecture](#-architecture)
+7. [License](#-license)
+8. [Contact](#-contact)
+   
 ## 🚀 Live Demo
 
 Try the app by clicking [here](https://codesync.alexlevkov.com/).
