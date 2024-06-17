@@ -30,6 +30,7 @@
   .title-typed-box {
     flex-direction: column-reverse;
     align-items: center;
+    min-width: 80vw;
   }
   .title-slogan {
     margin-top: 50px;
@@ -38,5 +39,4 @@
   .sub-title-slogan {
     font-size: 15px;
   }
-
 }
