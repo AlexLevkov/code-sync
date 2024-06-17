@@ -19,9 +19,9 @@ Try the app by clicking [here](https://codesync.alexlevkov.com/).
 
 ## 🛠️ Usage
 
-1. Create a new project by clicking the top nav link.
+1. Create a new project or choose from the public examples.
 2. Edit a project via the gear icon.
-3. Enter a project by clicking on the preview box.
+3. Share the project room URL and work together.
 
 ## ⭐ Features
 
