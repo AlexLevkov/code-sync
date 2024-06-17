@@ -6,8 +6,8 @@ This is a real-time code editing web app that allows multiple users to collabora
 
 1. [Live Demo](#-live-demo)
 2. [Features](#-features)
-3. [Usage](#-usage)
-4. [Installation](#-installation)
+3. [Usage](#%EF%B8%8F-usage)
+4. [Installation](#%EF%B8%8Finstallation)
 5. [Tech Stack](#-tech-stack)
 6. [Architecture](#%EF%B8%8F-architecture)
 7. [License](#-license)
