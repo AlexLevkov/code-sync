@@ -38,38 +38,38 @@ Try the app by clicking [here](https://codesync.alexlevkov.com/).
     ```
 2. **Setup Frontend**
 Navigate to the frontend directory:
-```bash
-cd frontend
-```
+   ```bash
+   cd frontend
+   ```
 Install frontend dependencies:
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 Start the frontend development server:
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 The frontend will be running at:
 ```bash
 http://localhost:3000
 ```
 3. **Setup Backend**
 Open a new terminal and navigate to the backend directory:
-```bash
-cd backend
-```
+   ```bash
+   cd backend
+   ```
 Install backend dependencies:
-```bash
-npm install
+   ```bash
+   npm install
 ```
 Start the backend server:
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 The backend will be running at:
-```bash
-http://localhost:2000
-```
+   ```bash
+   http://localhost:2000
+   ```
 
 ## 📚 Tech Stack
 
@@ -79,13 +79,14 @@ http://localhost:2000
 - Node.js
 - Express
 - MongoDB
+  
 ## 🖥️ Architecture
 
 <img src="https://raw.githubusercontent.com/AlexLevkov/code-sync-app/main/Diagram.png" />
 
 ## 📃 License
-
 MIT License
+
 ## 🙋‍♂️ Contact
 <h3 align="left">Let's connect on Linkedin!</h3>
 <a href="https://www.linkedin.com/in/alex-levkov/" target="blank">
