@@ -34,23 +34,23 @@ Try the app by clicking [here](https://codesync.alexlevkov.com/).
 ## ⚙️Installation
 
 - **Clone the repository:**
-   ```bash
-   git clone https://github.com/AlexLevkov/code-sync-app.git
-    ```
+```bash
+git clone https://github.com/AlexLevkov/code-sync-app.git
+ ```
 **Setup Frontend**
 
 1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
+```bash
+cd frontend
+```
 2. Install frontend dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 3. Start the frontend development server:
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 4. The frontend will be running at:
 ```bash
 http://localhost:3000
@@ -59,21 +59,21 @@ http://localhost:3000
 **Setup Backend**
 
 1. Open a new terminal and navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
+```bash
+cd backend
+```
 2. Install backend dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 3. Start the backend server:
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 4. The backend will be running at:
-   ```bash
-   http://localhost:2000
-   ```
+```bash
+http://localhost:2000
+```
 
 ## 📚 Tech Stack
 
