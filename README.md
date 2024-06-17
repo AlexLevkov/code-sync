@@ -80,6 +80,8 @@ http://localhost:2000
 - MongoDB
 ## 🖥️ Architecture
 
+<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync-app/main/Diagram.png" />
+
 ## 📃 License
 
 MIT License
