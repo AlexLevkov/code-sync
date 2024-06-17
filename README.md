@@ -9,9 +9,9 @@ This is a real-time code editing web app that allows multiple users to collabora
 3. [Usage](#-usage)
 4. [Installation](#-installation)
 5. [Tech Stack](#-tech-stack)
-6. [Architecture](#-architecture)
+6. [Architecture](#%EF%B8%8F-architecture)
 7. [License](#-license)
-8. [Contact](#-contact)
+8. [Contact](#%EF%B8%8F-contact)
    
 ## 🚀 Live Demo
 
