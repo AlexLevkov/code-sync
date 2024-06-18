@@ -75,6 +75,7 @@ const LessonPage: React.FC = () => {
 
   return (
     <>
+      <pre>{JSON.stringify(lesson, null, 2)}</pre>
       <UserModal userName={userName} onUserNameSubmit={handleUserUpdate} />
       <div className="animate__animated animate__fadeIn  ">
         <ControlBox title={lesson?.title} userName={userName} />

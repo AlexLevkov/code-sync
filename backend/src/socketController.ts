@@ -44,7 +44,7 @@ export function setupSocket(io: Server) {
     });
 
     socket.on("code:update", (room, { title, content, _id }: CodeUpdate) => {
-      csNamespace.to(room).emit("code:update", { title, content, _id });
+      socket.broadcast.to(room).emit("code:update", { title, content, _id });
     });
 
     socket.on("disconnecting", () => {
