@@ -31,7 +31,7 @@ Try the app by clicking [here](https://codesync.alexlevkov.com/).
 - See who is online through the participants box
 - Use the app on any device: mobile or desktop
 
-## ⚙️Installation
+## ⚙️ Installation
 
 - **Clone the repository:**
    ```bash
