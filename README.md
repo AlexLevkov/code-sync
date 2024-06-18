@@ -4,22 +4,24 @@ This is a real-time code editing web app that allows multiple users to collabora
 
 ## 📋 Table of Contents
 
-1. [Live Demo](#live-demo)
-2. [Features](#features)
-3. [Usage](#usage)
-4. [Installation](#installation)
-5. [Tech Stack](#tech-stack)
-6. [Architecture](#architecture)
-7. [License](#license)
-8. [Contact](#contact)
+1. [Live Demo](#-live-demo)
+2. [Features](#-features)
+3. [Usage](#%EF%B8%8F-usage)
+4. [Installation](#%EF%B8%8Finstallation)
+5. [Tech Stack](#-tech-stack)
+6. [Architecture](#%EF%B8%8F-architecture)
+7. [License](#-license)
+8. [Contact](#%EF%B8%8F-contact)
+   
 ## 🚀 Live Demo
 
 Try the app by clicking [here](https://codesync.alexlevkov.com/).
+
 ## 🛠️ Usage
 
-1. Create a new project by clicking the top nav link.
+1. Create a new project or choose from the public examples.
 2. Edit a project via the gear icon.
-3. Enter a project by clicking on the preview box.
+3. Share the project room URL and work together.
 
 ## ⭐ Features
 
@@ -31,44 +33,47 @@ Try the app by clicking [here](https://codesync.alexlevkov.com/).
 
 ## ⚙️Installation
 
-1. **Clone the repository:**
+- **Clone the repository:**
    ```bash
    git clone https://github.com/AlexLevkov/code-sync-app.git
     ```
-2. **Setup Frontend**
-Navigate to the frontend directory:
-```bash
-cd frontend
-```
-Install frontend dependencies:
-```bash
-npm install
-```
-Start the frontend development server:
-```bash
-npm start
-```
-The frontend will be running at:
-```bash
-http://localhost:3000
-```
-3. **Setup Backend**
-Open a new terminal and navigate to the backend directory:
-```bash
-cd backend
-```
-Install backend dependencies:
-```bash
-npm install
-```
-Start the backend server:
-```bash
-npm start
-```
-The backend will be running at:
-```bash
-http://localhost:2000
-```
+**Setup Frontend**
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install frontend dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the frontend development server:
+   ```bash
+   npm start
+   ```
+4. The frontend will be running at:
+   ```bash
+   http://localhost:3000
+   ```
+
+**Setup Backend**
+
+1. Open a new terminal and navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Install backend dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the backend server:
+   ```bash
+   npm start
+   ```
+4. The backend will be running at:
+   ```bash
+   http://localhost:2000
+   ```
 
 ## 📚 Tech Stack
 
@@ -78,11 +83,14 @@ http://localhost:2000
 - Node.js
 - Express
 - MongoDB
+  
 ## 🖥️ Architecture
 
-## 📃 License
+<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync-app/main/Diagram.png" />
 
+## 📃 License
 MIT License
+
 ## 🙋‍♂️ Contact
 <h3 align="left">Let's connect on Linkedin!</h3>
 <a href="https://www.linkedin.com/in/alex-levkov/" target="blank">
