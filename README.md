@@ -15,7 +15,7 @@ This is a real-time code editing web app that allows multiple users to collabora
    
 ## 🚀 Live Demo
 
-Try the app by clicking <strong>[here](https://codesync.alexlevkov.com/).</strong>
+Try the app by clicking <strong>[here](https://codesync.alexlevkov.com/)</strong>
 
 ## 🛠️ Usage
 
