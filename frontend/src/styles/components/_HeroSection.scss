@@ -9,7 +9,8 @@
 .title-typed-box {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
+  flex-direction: column-reverse;
 }
 
 .title-slogan {
@@ -24,6 +25,7 @@
 
 .public-title {
   margin-bottom: 20px;
+  align-self: flex-start;
 }
 
 @media (max-width: 600px) {
@@ -41,5 +43,6 @@
   }
   .public-title {
     font-size: 24px;
+    align-self: unset;
   }
 }
