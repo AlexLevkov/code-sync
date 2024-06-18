@@ -3,7 +3,6 @@
 #### This is a real-time code editing web app, that allows multiple users to collaboratively edit code and interact online.
 
 
-
 <img src="https://raw.githubusercontent.com/AlexLevkov/code-sync-app/main/deviceframes.png" />
 
 ## 📋 Table of Contents
