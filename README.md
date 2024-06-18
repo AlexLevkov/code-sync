@@ -8,13 +8,14 @@
 ## 📋 Table of Contents
 
 1. [Live Demo](#-live-demo)
-2. [Features](#-features)
-3. [Usage](#%EF%B8%8F-usage)
+2. [Usage](#%EF%B8%8F-usage)
+3. [Features](#-features)
 4. [Installation](#%EF%B8%8Finstallation)
 5. [Tech Stack](#-tech-stack)
 6. [Architecture](#%EF%B8%8F-architecture)
 7. [License](#-license)
 8. [Contact](#%EF%B8%8F-contact)
+
    
 ## 🚀 Live Demo
 
