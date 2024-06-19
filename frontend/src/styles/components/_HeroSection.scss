@@ -18,13 +18,7 @@
   text-align: center;
 }
 
-.sub-title-slogan {
-  margin: 0;
-  text-align: center;
-}
-
 .public-title {
-  margin-bottom: 20px;
   align-self: flex-start;
 }
 
@@ -33,16 +27,5 @@
     flex-direction: column-reverse;
     align-items: center;
     min-width: 80vw;
-  }
-  .title-slogan {
-    margin-top: 50px;
-    font-size: 24px;
-  }
-  .sub-title-slogan {
-    font-size: 15px;
-  }
-  .public-title {
-    font-size: 24px;
-    align-self: unset;
   }
 }

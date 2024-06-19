@@ -2,13 +2,11 @@ body {
   background-color: $clr1;
   margin: 0;
   padding: 0;
-  // font-family: "system-ui";
   color: $clr10;
-  letter-spacing: 2px;
-  // font-family: "Fira Code", monospace;
-  font-family: sans-serif;
+  letter-spacing: 1px;
   font-optical-sizing: auto;
   font-style: normal;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 a {
@@ -18,7 +16,10 @@ a {
   color: inherit;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px auto 30px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }

@@ -31,8 +31,8 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
           <div className="over-lay" />
           <dialog ref={refDialog} className="dialog-modal " open>
             <Form onSubmit={handleSumbit} method="dialog">
-              <h3>Welcome! </h3>
-              <h4>Please enter your name:</h4>
+              <h4>Welcome! </h4>
+              <h5>Please enter your name:</h5>
               <Form.Control
                 type="text"
                 placeholder="Enter your name"

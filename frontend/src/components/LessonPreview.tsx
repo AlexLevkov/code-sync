@@ -13,7 +13,7 @@ const LessonPreview: React.FC<LessonPreviewProps> = ({ lesson }) => {
     <div className="lesson-preview-item animate__animated animate__fadeInLeft">
       <Link to={"/lesson/" + lesson._id}>
         <div className="title-box">
-          <h2>{lesson.title}</h2>
+          <h5>{lesson.title}</h5>
           <Link to={"/edit/" + lesson._id}>
             <GoGear className="settings-icon" />
           </Link>

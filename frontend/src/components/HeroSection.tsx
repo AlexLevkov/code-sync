@@ -6,13 +6,11 @@ const HeroSection: React.FC = () => {
   return (
     <div className="hero-section-cmp">
       <div className="hero-section-cmp-title-box">
-        <h1 className="title-slogan">Live code collaboration</h1>
-        <h2 className="sub-title-slogan">
-          Code, Chat, and Collaborate Together
-        </h2>
+        <h2 className="main-title">Live Code Collaboration</h2>
+        <h4 className="sub-title">Code, Chat and Collaborate Together</h4>
       </div>
       <div className="title-typed-box">
-        <h2 className="public-title">Public Examples:</h2>
+        <h3 className="public-title">Public Examples:</h3>
         <AnimatedCode />
       </div>
     </div>

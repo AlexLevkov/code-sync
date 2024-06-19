@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSync, FaPlus } from "react-icons/fa";
+import { Button, Form } from "react-bootstrap";
 
 const Navbar = () => {
   return (
@@ -11,8 +12,10 @@ const Navbar = () => {
         <span>deSync</span>
       </Link>
       <Link className="create-link" to="/edit">
-        <FaPlus className="create-svg" />
-        <span>New Project</span>
+        <Button className="new-project-btn" variant="">
+          <FaPlus />
+          <span>New Project</span>
+        </Button>
       </Link>
     </nav>
   );

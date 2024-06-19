@@ -29,9 +29,9 @@ const ControlBox: React.FC<ControlBoxProps> = ({ title, userName }) => {
 
   return (
     <div className="control-cmp">
-      <h2 className="lesson-title">
+      <h3 className="lesson-title">
         {title} - Welcome {userName}
-      </h2>
+      </h3>
       <div className="control-box">
         <TbCopy
           className="copy-svg"

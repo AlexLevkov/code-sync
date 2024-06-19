@@ -76,13 +76,13 @@ const EditPage: React.FC = () => {
 
   return (
     <div className="edit-page animate__animated animate__fadeIn">
-      <h1 className="edit-title">Edit Code</h1>
+      <h2 className="main-title">{lesson ? "Edit Code" : "New Project"}</h2>
       <DeleteModal
         lessonName={lessonToEdit?.title}
         onDelete={deleteLesson}
         isDelete={isDelete}
       />
-      <Form>
+      <Form className="main-layout">
         <Form.Control
           type="text"
           name="title"
