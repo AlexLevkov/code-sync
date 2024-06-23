@@ -90,7 +90,7 @@ Try the app by clicking <strong>[here](https://codesync.alexlevkov.com/)</strong
   
 ## 🖥️ Architecture
 
-<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync-app/main/Diagram.png" />
+<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync/main/docs/Diagram.png" />
 
 ## 📃 License
 MIT License
