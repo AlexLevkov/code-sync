@@ -88,7 +88,7 @@ const EditPage: React.FC = () => {
           name="title"
           value={lessonToEdit?.title}
           onChange={handleInputChange}
-          placeholder="Enter a title for this lesson"
+          placeholder="Enter a title for this project"
         />
         <CodeEditor
           content={lessonToEdit?.content}

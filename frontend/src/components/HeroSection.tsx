@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedCode from "../components/AnimatedCode.tsx";
-import TypedText from "./TypedText.tsx";
 
 const HeroSection: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const HeroSection: React.FC = () => {
         <h4 className="sub-title">Code, Chat and Collaborate Together</h4>
       </div>
       <div className="title-typed-box">
-        <h3 className="public-title">Public Examples:</h3>
+        <h4 className="public-title">Public Examples:</h4>
         <AnimatedCode />
       </div>
     </div>

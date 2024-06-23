@@ -1,12 +1,12 @@
 import React from "react";
-import LessonPreview from "../components/LessonPreview";
+import LessonPreview from "../components/LessonPreview.tsx";
 import HeroSection from "../components/HeroSection.tsx";
 import Footer from "../components/Footer.tsx";
 
-import { Lesson, RootState } from "../types";
+import { Lesson, RootState } from "../types.ts";
 import { useSelector } from "react-redux";
 
-const LessonsListPage: React.FC = () => {
+const Lobby: React.FC = () => {
   const { lessonList } = useSelector((state: RootState) => state.lessons);
 
   return (
@@ -24,9 +24,8 @@ const LessonsListPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
 
-export default LessonsListPage;
+export default Lobby;

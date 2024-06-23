@@ -9,7 +9,7 @@ import { setupSocket } from "./socketController";
 import exercisesRoutes from "./routes/exercises";
 
 const corsOptions: cors.CorsOptions = {
-  origin: ["http://127.0.0.1:3000", "http://localhost:3000"],
+  origin: ["https://codesync.alexlevkov.com"],
 };
 
 const app = express();

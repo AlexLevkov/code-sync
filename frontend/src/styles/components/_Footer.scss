@@ -1,11 +1,17 @@
 footer {
   text-align: center;
-  margin: 15px;
+  margin: auto 0 15px;
   a {
     display: inline;
     color: #5adddb;
   }
-  svg {
+  .heart {
     color: #cc3763;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 12px;
   }
 }

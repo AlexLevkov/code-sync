@@ -1,8 +1,12 @@
 import React, { useRef, useState, useEffect, ReactHTML } from "react";
 import { Button, Form } from "react-bootstrap";
-import {DeleteModalProps} from "../types"
+import { DeleteModalProps } from "../types";
 
-const DeleteModal:React.FC<DeleteModalProps> = ({ onDelete, isDelete, lessonName }) => {
+const DeleteModal: React.FC<DeleteModalProps> = ({
+  onDelete,
+  isDelete,
+  lessonName,
+}) => {
   const refDialog = useRef<HTMLDialogElement>(null);
 
   const handleSumbit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -24,8 +28,8 @@ const DeleteModal:React.FC<DeleteModalProps> = ({ onDelete, isDelete, lessonName
           <div className="over-lay" />
           <dialog ref={refDialog} className="dialog-modal " open>
             <Form onSubmit={handleSumbit} method="dialog">
-              <h3>Delete {lessonName}</h3>
-              <h4>Are you sure?</h4>
+              <h4>Delete {lessonName}</h4>
+              <h5>Are you sure?</h5>
               <div className="modal-btn-box">
                 <Button variant="dark" onClick={closeDialog}>
                   Cancel

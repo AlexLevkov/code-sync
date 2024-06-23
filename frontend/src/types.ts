@@ -14,10 +14,6 @@ export type CodeBlockProps = {
   code: string;
 };
 
-export type LessonsListPageProps = {
-  lesson: Lesson[];
-};
-
 export type RootState = {
   lessons: {
     lessonList: Lesson[];

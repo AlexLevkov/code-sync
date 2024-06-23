@@ -14,6 +14,7 @@ const Chat: React.FC<ChatProps> = ({ onChatMessage, messages }) => {
     event.preventDefault();
     if (refInput.current) {
       const message: string = refInput.current.value;
+      if (!message) return;
       onChatMessage(message);
       refInput.current.value = "";
     }

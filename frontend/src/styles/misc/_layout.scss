@@ -1,3 +1,9 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main-title {
   text-align: center;
   margin-top: 60px;
@@ -6,6 +12,9 @@
 .sub-title {
   text-align: center;
   margin-top: 15px;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .main-layout {

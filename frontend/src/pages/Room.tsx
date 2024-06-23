@@ -16,7 +16,7 @@ import UserModal from "../components/UserModal.tsx";
 import { Message, User, Lesson, RootState } from "../types.ts";
 import { AppDispatch } from "../app/store/store";
 
-const LessonPage: React.FC = () => {
+const Room: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useDispatch<AppDispatch>();
 
@@ -74,7 +74,7 @@ const LessonPage: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="lobby-wrapper">
       <UserModal userName={userName} onUserNameSubmit={handleUserUpdate} />
       <div className="animate__animated animate__fadeIn  ">
         <ControlBox title={lesson?.title} userName={userName} />
@@ -90,8 +90,8 @@ const LessonPage: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default LessonPage;
+export default Room;
