@@ -4,7 +4,7 @@
 
 
 
-<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync/main/docs/deviceframes.png" />
+<img src="https://raw.githubusercontent.com/AlexLevkov/code-sync/main/docs/Device_Frames.png" />
 
 ## 📋 Table of Contents
 
