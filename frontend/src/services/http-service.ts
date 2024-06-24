@@ -1,12 +1,10 @@
 import Axios from "axios";
 import { Lesson } from "../types";
 
-// const BASE_URL =
-//   process.env.NODE_ENV === "production"
-//     ? "https://central-server.alexlevkov.com"
-//     : "http://localhost:2000";
-
-const BASE_URL = "https://central-server.alexlevkov.com";
+const BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://central-server.alexlevkov.com"
+    : "http://localhost:2000";
 
 const axios = Axios.create({
   withCredentials: true,

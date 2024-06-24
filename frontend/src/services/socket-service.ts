@@ -1,11 +1,9 @@
 import { io, Socket } from "socket.io-client";
 
-// const SOCKET_SERVER_URL =
-//   process.env.NODE_ENV === "production"
-//     ? "https://central-server.alexlevkov.com/cs"
-//     : "http://localhost:2000/cs";
-
-const SOCKET_SERVER_URL = "https://central-server.alexlevkov.com/cs";
+const SOCKET_SERVER_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://central-server.alexlevkov.com/cs"
+    : "http://localhost:2000/cs";
 
 class SocketService {
   private socket: Socket | null = null;
