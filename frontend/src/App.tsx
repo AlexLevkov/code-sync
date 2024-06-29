@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Lobby />} />
-        <Route path="/lesson/:id" element={<Room />} />
+        <Route path="/room/:id" element={<Room />} />
         <Route path="/edit/:id?" element={<EditPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>

@@ -3,7 +3,8 @@ footer {
   margin: auto 0 15px;
   a {
     display: inline;
-    color: #5adddb;
+    color: $clr4;
+    text-decoration: underline;
   }
   .heart {
     color: #cc3763;

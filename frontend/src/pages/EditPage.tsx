@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { Lesson, RootState } from "../types";
@@ -24,10 +24,13 @@ const EditPage: React.FC = () => {
     state.lessons.lessonList.find((lesson) => lesson._id === id)
   ) as Lesson;
 
+  const refTitle = useRef<HTMLInputElement>(null);
+
   const [lessonToEdit, setLessonToEdit] = useState<Lesson>(lesson);
   const [isDelete, setIsDelete] = useState<boolean>(false);
 
   useEffect(() => {
+    refTitle.current?.focus();
     if (lesson) {
       setLessonToEdit(lesson);
     } else {
@@ -62,7 +65,7 @@ const EditPage: React.FC = () => {
     const res = await dispatch(saveLesson({ lessonToEdit }));
     if (res) {
       const { _id } = res;
-      navigate("/lesson/" + _id);
+      navigate("/room/" + _id);
     }
   };
 
@@ -84,6 +87,7 @@ const EditPage: React.FC = () => {
       />
       <Form className="main-layout">
         <Form.Control
+          ref={refTitle}
           type="text"
           name="title"
           value={lessonToEdit?.title}
@@ -116,5 +120,3 @@ const EditPage: React.FC = () => {
 };
 
 export default EditPage;
-
-// value = { text };

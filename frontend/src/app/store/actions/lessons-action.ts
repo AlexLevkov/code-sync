@@ -11,6 +11,7 @@ import {
   updateSuccess,
   sendingRequest,
   updateError,
+  deleteError,
   createSuccess,
   deleteSuccess,
 } from "../../../utils/noticationContent";
@@ -55,7 +56,6 @@ export const fetchLesson = (id: string) => {
 export const saveLesson = ({ lessonToEdit }: SaveLessonArgs) => {
   return async (dispatch: AppDispatch) => {
     try {
-      // PUT request
       if (lessonToEdit._id) {
         dispatch(notificationActions.updateNotification(sendingRequest));
 
@@ -70,8 +70,6 @@ export const saveLesson = ({ lessonToEdit }: SaveLessonArgs) => {
         } else {
           dispatch(notificationActions.updateNotification(updateError));
         }
-
-        // POST request
       } else {
         const response = await axiosService.post(END_POINT_URL, lessonToEdit);
         const { ex } = response.data;
@@ -94,6 +92,8 @@ export const removeLesson = ({ id }: { id: string }) => {
       const { _id } = response.data;
       dispatch(notificationActions.updateNotification(deleteSuccess));
       dispatch(lessonActions.deleteLesson(_id));
+    } else {
+      dispatch(notificationActions.updateNotification(updateError));
     }
   };
 };

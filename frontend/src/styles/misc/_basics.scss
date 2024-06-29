@@ -23,3 +23,25 @@ h4,
 h5 {
   margin: 0;
 }
+
+/* scrollbar  */
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: $clr1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $clr2;
+  border-radius: 10px;
+  border: 2px solid $clr1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b6b6b;
+}

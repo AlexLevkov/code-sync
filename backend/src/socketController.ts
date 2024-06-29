@@ -16,12 +16,8 @@ type CodeUpdate = {
   _id: string;
 };
 
-type UserUpdate = {
-  userName: string;
-};
-
 export function setupSocket(io: Server) {
-  let rooms: any = {};
+  let rooms: { [room: string]: User[] } = {};
 
   const csNamespace = io.of("/cs");
   csNamespace.on("connection", (socket: Socket) => {
@@ -49,11 +45,13 @@ export function setupSocket(io: Server) {
 
     socket.on("disconnecting", () => {
       const room = [...socket.rooms][1];
-      rooms[room] = rooms[room].filter(
-        (user: any) => user.socketId !== socket.id
-      );
-      const userArr = rooms[room];
-      csNamespace.to(room).emit("user:update", { userArr });
+      if (rooms[room]) {
+        rooms[room] = rooms[room].filter(
+          (user: User) => user.socketId !== socket.id
+        );
+        const userArr = rooms[room];
+        csNamespace.to(room).emit("user:update", { userArr });
+      }
     });
 
     socket.on("disconnect", () => {

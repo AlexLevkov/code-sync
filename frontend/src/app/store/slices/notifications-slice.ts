@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Store } from "react-notifications-component";
 
 const notificationsSlice = createSlice({
   name: "Notifications",
@@ -11,13 +10,9 @@ const notificationsSlice = createSlice({
       type: "success",
       insert: "top",
       container: "top-center",
-      // animationIn: ["animate__animated", "animate__fadeIn"],
-      // animationOut: ["animate__animated", "animate__fadeOut"],
       dismiss: {
         click: true,
         duration: 4000,
-        // showIcon: true,
-        // onScreen: true,
       },
     },
   },
@@ -30,7 +25,10 @@ const notificationsSlice = createSlice({
       };
     },
     endNotification(state) {
-      state.notification = { ...state.notification, isInit: true };
+      state.notification = {
+        ...state.notification,
+        isInit: true,
+      };
     },
   },
 });

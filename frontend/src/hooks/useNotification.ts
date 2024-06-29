@@ -17,7 +17,6 @@ const useNotification = () => {
       dispatch(notificationActions.endNotification());
     }
   }, [notification, dispatch]);
-  return {};
 };
 
 export default useNotification;

@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from "react";
 import socketService from "../services/socket-service";
-// router
 import { useParams } from "react-router-dom";
-// state
 import { useSelector, useDispatch } from "react-redux";
 import { lessonActions } from "../app/store/slices/lessons-slice.ts";
 import { userActions } from "../app/store/slices/users-slice.ts";
-// cmps
 import ParBox from "../components/ParBox";
 import Chat from "../components/Chat.tsx";
 import CodeEditor from "../components/CodeEditor.tsx";
 import ControlBox from "../components/ControlBox";
 import UserModal from "../components/UserModal.tsx";
-//types
 import { Message, User, Lesson, RootState } from "../types.ts";
 import { AppDispatch } from "../app/store/store";
 
@@ -54,7 +50,7 @@ const Room: React.FC = () => {
     }
   }, [userName]);
 
-  const handleCodeChange = (_: any, content: string) => {
+  const handleCodeChange = (_: unknown, content: string) => {
     const title = lesson?.title;
     if (lesson) {
       socketService.emit("code:update", lesson.title, {

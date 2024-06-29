@@ -1,8 +1,6 @@
 import React from "react";
 import LessonPreview from "../components/LessonPreview.tsx";
 import HeroSection from "../components/HeroSection.tsx";
-import Footer from "../components/Footer.tsx";
-
 import { Lesson, RootState } from "../types.ts";
 import { useSelector } from "react-redux";
 

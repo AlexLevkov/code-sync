@@ -8,19 +8,19 @@ export const sendingRequest = {
 
 export const updateSuccess = {
   title: "Update Status Success",
-  message: "Your lesson has been updated",
+  message: "Your project has been updated",
   type: "success",
 };
 
 export const createSuccess = {
   title: "Create Status Success",
-  message: "Your lesson has been created",
+  message: "Invite others to your project",
   type: "success",
 };
 
 export const updateError = {
   title: "Update Status Error",
-  message: "Error updating your lesson, please try again later",
+  message: "Error updating your project, please try again later",
   type: "danger",
 };
 
@@ -32,7 +32,7 @@ export const requireError = {
 
 export const deleteSuccess = {
   title: "Delete Status Success",
-  message: "Your lesson has been deleted",
+  message: "Your project has been deleted",
   type: "success",
 };
 
@@ -44,6 +44,12 @@ export const copySuccess = {
 
 export const resetSuccess = {
   title: "Reset Status Success",
-  message: "The lesson has been reset",
+  message: "The project has been reset",
   type: "success",
+};
+
+export const deleteError = {
+  title: "Delete Status Error",
+  message: "Error deleting your project, please try again later",
+  type: "danger",
 };

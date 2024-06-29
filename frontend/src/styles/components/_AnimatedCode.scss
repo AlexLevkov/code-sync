@@ -1,7 +1,7 @@
 [data-testid="react-typed"] {
   white-space: pre-line;
   font-size: 18px;
-  min-width: 400px;
+  min-width: 350px;
   min-height: 110px;
 }
 
@@ -15,21 +15,25 @@
 .typed-code {
   white-space: pre-line;
   font-size: 18px;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .red {
-  color: #d41f52;
+  color: red;
 }
 
 .orange {
-  color: #d27817;
+  color: orange;
 }
 
 .green {
-  color: #8eb921;
+  color: rgb(118, 223, 118);
 }
 
 .cream {
-  color: #b5af98;
+  color: wheat;
+}
+
+.gold {
+  color: gold;
 }

@@ -7,11 +7,15 @@ import { LessonPreviewProps } from "../types";
 const LessonPreview: React.FC<LessonPreviewProps> = ({ lesson }) => {
   const customOptions = {
     lineNumbers: false,
+    readOnly: true,
+    extraKeys: {
+      Tab: false,
+    },
   };
 
   return (
     <div className="lesson-preview-item animate__animated animate__fadeInLeft">
-      <Link to={"/lesson/" + lesson._id}>
+      <Link to={"/room/" + lesson._id}>
         <div className="title-box">
           <h5>{lesson.title}</h5>
           <Link to={"/edit/" + lesson._id}>

@@ -6,7 +6,7 @@ const AnimatedCode: React.FC = () => {
     strings: [
       `<code style="color:white">
         <span class="red">const</span> <span class="orange">sayHello</span> = () => {
-        <span style="margin-left:25px">console.<span class="green">log</span>("Hello CodeSync!")</span></span>
+        <span style="margin-left:25px">console.<span class="green">log</span>(<span class="gold">"Hello CodeSync!"</span>)</span></span>
         };</code>`,
     ],
     typeSpeed: 50,

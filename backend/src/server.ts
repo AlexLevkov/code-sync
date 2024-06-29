@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
-//
+
 import express from "express";
 import { Server as SocketIOServer, Socket } from "socket.io";
 import http from "http";
@@ -9,7 +9,11 @@ import { setupSocket } from "./socketController";
 import exercisesRoutes from "./routes/exercises";
 
 const corsOptions: cors.CorsOptions = {
-  origin: ["https://codesync.alexlevkov.com"],
+  origin: [
+    "https://codesync.alexlevkov.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+  ],
 };
 
 const app = express();

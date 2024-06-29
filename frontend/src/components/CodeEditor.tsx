@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-// code-mirror
 import { Controlled as CodeBlock } from "react-codemirror2";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/monokai.css";
 import "codemirror/mode/javascript/javascript";
-// types
 import { CodeEditorProps } from "../types";
 import { Editor } from "codemirror";
 
@@ -35,7 +33,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
     setLocalContent(content);
   }, [content]);
 
-  const handleChange = (_1: any, _2: any, value: string) => {
+  const handleChange = (_: unknown, __: unknown, value: string) => {
     setIsUpdate(true);
     setLocalContent((pv) => value);
   };
