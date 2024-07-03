@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import socketService from "../services/socket-service";
+import socketService from "../services/socket-client.ts";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { lessonActions } from "../app/store/slices/lessons-slice.ts";

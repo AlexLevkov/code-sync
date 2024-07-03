@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { UserModalProp } from "../types";
+import { FaHand } from "react-icons/fa6";
 
 const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
   const [inputValue, setInputValue] = useState("");
@@ -31,7 +32,9 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
           <div className="over-lay" />
           <dialog ref={refDialog} className="dialog-modal " open>
             <Form onSubmit={handleSumbit} method="dialog">
-              <h4>Welcome! </h4>
+              <h4>
+                Welcome <FaHand className="hello-icon" />
+              </h4>
               <h5>Please enter your name:</h5>
               <Form.Control
                 type="text"
@@ -43,7 +46,7 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
               />
               <div className="modal-btn-box">
                 <Button variant="dark">
-                  <Link to="/">Go Back</Link>
+                  <Link to="/">Back</Link>
                 </Button>
                 <Button
                   variant="dark"

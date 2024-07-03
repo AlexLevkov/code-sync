@@ -39,17 +39,14 @@
     width: 100%;
     margin: 0;
   }
+}
 
-  svg {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 20px;
-    &:hover {
-      color: $clr10;
-      cursor: pointer;
-    }
-  }
+.hello-icon {
+  rotate: -30deg;
+  transform: scaleX(-1);
+  margin-left: 2px;
+  font-size: 22px;
+  vertical-align: -1px;
 }
 
 .modal-btn-box {

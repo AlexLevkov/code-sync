@@ -30,7 +30,7 @@
   padding: 15px;
   overflow-x: hidden;
   overflow-y: scroll;
-  max-height: 25vh;
+  max-height: 40vh;
 }
 
 .chat-msg-line {
@@ -51,4 +51,10 @@
 .chat-send-icon {
   font-size: 30px;
   color: $clr10;
+}
+
+@media (max-width: 600px) {
+  .chat-msg-container {
+    height: 35vh;
+  }
 }

@@ -4,7 +4,7 @@ import { notificationActions } from "../slices/notifications-slice";
 import { AppDispatch } from "../store";
 import { Lesson } from "@/types";
 import { Store } from "react-notifications-component";
-import { axiosService } from "../../../services/http-service";
+import { axiosService } from "../../../services/http-client";
 import { SaveLessonArgs } from "../../../types";
 
 import {

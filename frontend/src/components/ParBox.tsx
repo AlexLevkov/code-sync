@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Collapse } from "react-bootstrap";
 import { ParBoxProps } from "../types";
+import chevron_down from "../assets/svg/chevron_down.svg";
+import chevron_up from "../assets/svg/chevron_up.svg";
 
 const ParBox: React.FC<ParBoxProps> = ({ userArr }) => {
   const [open, setOpen] = useState(true);
@@ -8,14 +10,14 @@ const ParBox: React.FC<ParBoxProps> = ({ userArr }) => {
   return (
     <div className="par-cmp">
       <Button variant="" onClick={() => setOpen(!open)}>
-        <span> Online Participants</span>
-        {open ? " ↑" : " ↓"}
+        <span> Online participants ( {userArr?.length} )</span>
+        {open ? (
+          <img src={chevron_up} alt="up" />
+        ) : (
+          <img src={chevron_down} alt="down" />
+        )}
       </Button>
-      <Collapse
-        className="par-collapse"
-        appear={open}
-        in={open}
-      >
+      <Collapse className="par-collapse" appear={open} in={open}>
         <div>
           {userArr.map((user) => {
             return (

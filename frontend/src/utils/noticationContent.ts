@@ -1,7 +1,7 @@
 import { MdErrorOutline } from "react-icons/md";
 
 export const sendingRequest = {
-  title: "Sending request",
+  title: "Sending Request",
   message: "Please wait...",
   type: "warning",
 };
@@ -25,7 +25,7 @@ export const updateError = {
 };
 
 export const requireError = {
-  title: "All fields are required",
+  title: "All Fields are Required",
   message: "Please fill out all fields",
   type: "danger",
 };
@@ -37,7 +37,7 @@ export const deleteSuccess = {
 };
 
 export const copySuccess = {
-  title: "Copied to clipboard!",
+  title: "Copied to Clipboard!",
   message: "URL is copied to clipboard",
   type: "success",
 };

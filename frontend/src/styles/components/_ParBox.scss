@@ -1,8 +1,15 @@
 .par-cmp {
-  padding: 15px;
+  padding: 15px 15px 0 15px;
   color: #cccccc;
   background-color: $clr3;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  max-height: 40vh;
+  width: 30vw;
+  z-index: 100;
+  overflow-y: scroll;
+  border-bottom: 1px #a79e85 solid;
+
   button {
     padding: 0;
     color: #cccccc;
@@ -32,6 +39,11 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.par-collapse {
-  border-bottom: 1px solid #cccccc;
+@media (max-width: 600px) {
+  .par-cmp {
+    width: 90vw;
+    max-height: 30vh;
+  }
 }
+
+

@@ -32,14 +32,14 @@ h5 {
 }
 
 ::-webkit-scrollbar-track {
-  background: $clr1;
+  background: $clr2;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $clr2;
+  background: #6b6b6b;
   border-radius: 10px;
-  border: 2px solid $clr1;
+  border: 2px solid $clr2;
 }
 
 ::-webkit-scrollbar-thumb:hover {
