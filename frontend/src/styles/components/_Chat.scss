@@ -55,6 +55,6 @@
 
 @media (max-width: 600px) {
   .chat-msg-container {
-    height: 35vh;
+    max-height: 35vh;
   }
 }
