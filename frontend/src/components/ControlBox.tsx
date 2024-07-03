@@ -29,7 +29,7 @@ const ControlBox: React.FC<ControlBoxProps> = ({ title, userName }) => {
 
   return (
     <div className="control-cmp">
-      <h3 className="lesson-title">{title}</h3>
+      <h4 className="lesson-title">{title}</h4>
       <div className="control-box">
         <TbCopy
           className="copy-svg"

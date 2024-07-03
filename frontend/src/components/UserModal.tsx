@@ -35,7 +35,7 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
               <h4>
                 Welcome <FaHand className="hello-icon" />
               </h4>
-              <h5>Please enter your name:</h5>
+              <h5>Please enter your name</h5>
               <Form.Control
                 type="text"
                 placeholder="Enter your name"
