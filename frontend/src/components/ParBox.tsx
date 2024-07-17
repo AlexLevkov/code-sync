@@ -11,11 +11,11 @@ const ParBox: React.FC<ParBoxProps> = ({ userArr }) => {
     <div className="par-cmp">
       <Button variant="" onClick={() => setOpen(!open)}>
         <span> Online participants ( {userArr?.length} )</span>
-        {open ? (
-          <img src={chevron_up} alt="up" />
-        ) : (
-          <img src={chevron_down} alt="down" />
-        )}
+        <img
+          src={chevron_up}
+          className={open ? "chevron" : "chevron down"}
+          alt="chevron"
+        />
       </Button>
       <Collapse className="par-collapse" appear={open} in={open}>
         <div>

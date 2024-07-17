@@ -17,6 +17,7 @@ export type CodeBlockProps = {
 export type RootState = {
   lessons: {
     lessonList: Lesson[];
+    error: boolean;
   };
   users: {
     userName: string;
@@ -70,4 +71,8 @@ export type ControlBoxProps = {
 
 export type SaveLessonArgs = {
   lessonToEdit: Lesson;
+};
+
+export type StatusMessageProps = {
+  error: boolean;
 };

@@ -103,6 +103,7 @@ const EditPage: React.FC = () => {
           {lessonToEdit?._id && (
             <Button
               variant="danger"
+              className="btn-delete"
               onClick={() => {
                 setIsDelete(true);
               }}
@@ -110,7 +111,7 @@ const EditPage: React.FC = () => {
               Delete
             </Button>
           )}
-          <Button variant="dark" onClick={submitLesson}>
+          <Button variant="dark" className="btn-save" onClick={submitLesson}>
             Save
           </Button>
         </div>

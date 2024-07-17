@@ -39,11 +39,16 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
+.chevron {
+  transition: 0.3s ease-in-out;
+  &.down {
+    transform: rotate(180deg);
+  }
+}
+
 @media (max-width: 600px) {
   .par-cmp {
     width: 90vw;
     max-height: 30vh;
   }
 }
-
-

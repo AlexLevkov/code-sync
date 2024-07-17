@@ -30,7 +30,11 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
       {!userName && (
         <>
           <div className="over-lay" />
-          <dialog ref={refDialog} className="dialog-modal " open>
+          <dialog
+            ref={refDialog}
+            className="dialog-modal animate__animated animate__fadeInDown "
+            open
+          >
             <Form onSubmit={handleSumbit} method="dialog">
               <h4>
                 Welcome <FaHand className="hello-icon" />
@@ -38,14 +42,14 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
               <h5>Please enter your name</h5>
               <Form.Control
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Your name"
                 value={inputValue}
                 ref={refInput}
                 onChange={handleInputChange}
                 required
               />
               <div className="modal-btn-box">
-                <Button variant="dark">
+                <Button variant="dark" className="btn-back">
                   <Link to="/">Back</Link>
                 </Button>
                 <Button

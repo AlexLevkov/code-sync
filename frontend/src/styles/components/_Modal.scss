@@ -53,3 +53,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.btn-back {
+  background-color: transparent;
+  color: #bababa;
+  border: #bababa 1px solid;
+  &:hover {
+    background-color: initial;
+    border: white 1px solid;
+  }
+}

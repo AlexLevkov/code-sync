@@ -27,12 +27,13 @@ export const fetchLessons = () => {
         return data;
       } catch (err) {
         console.log("err:", err);
+        dispatch(lessonActions.setError(true));
         return [];
       }
     };
 
     const response = await fetchData();
-    dispatch(lessonActions.addLessons(response));
+    if (response) dispatch(lessonActions.addLessons(response));
   };
 };
 

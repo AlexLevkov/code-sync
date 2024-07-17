@@ -29,4 +29,14 @@
     gap: 20px;
     margin-top: 20px;
   }
+  .btn-save {
+    background-color: $clr4;
+    color: black;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .btn-delete {
+    color: black;
+  }
 }

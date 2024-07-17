@@ -60,15 +60,15 @@
     font-size: 0.8rem;
     margin-right: 1px;
     margin-bottom: 0.5px;
-    animation: circle-animation 80s infinite linear;
+    // animation: circle-animation 80s infinite linear;
     color: $clr4;
   }
 
-  &:hover {
-    .circle-svg {
-      animation: circle-animation 2s infinite linear;
-    }
-  }
+  // &:hover {
+  //   .circle-svg {
+  //     animation: circle-animation 2s infinite linear;
+  //   }
+  // }
 }
 
 @keyframes circle-animation {
@@ -79,4 +79,3 @@
     transform: rotate(360deg);
   }
 }
-

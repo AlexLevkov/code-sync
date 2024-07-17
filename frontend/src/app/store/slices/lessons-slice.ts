@@ -5,6 +5,7 @@ const lessonsSlice = createSlice({
   name: "Lessons",
   initialState: {
     lessonList: [] as Lesson[],
+    error: false as boolean,
   },
   reducers: {
     addLessons(state, action) {
@@ -30,6 +31,9 @@ const lessonsSlice = createSlice({
       const id = action.payload;
       const index = state.lessonList.findIndex((lesson) => lesson._id === id);
       state.lessonList.splice(index, 1);
+    },
+    setError(state, _) {
+      state.error = true;
     },
   },
 });

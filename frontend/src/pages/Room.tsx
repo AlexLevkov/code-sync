@@ -70,7 +70,7 @@ const Room: React.FC = () => {
   };
 
   return (
-    <div className="lobby-wrapper">
+    <div>
       <UserModal userName={userName} onUserNameSubmit={handleUserUpdate} />
       <div className="animate__animated animate__fadeIn  ">
         <ControlBox title={lesson?.title} userName={userName} />
