@@ -58,8 +58,16 @@
   background-color: transparent;
   color: #bababa;
   border: #bababa 1px solid;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: initial;
     border: white 1px solid;
+  }
+}
+
+.btn-join {
+  &:hover,
+  &:focus {
+    background-color: black !important;
   }
 }

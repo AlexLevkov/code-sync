@@ -7,7 +7,7 @@ import { fetchLesson } from "../app/store/actions/lessons-action";
 import { notificationActions } from "../app/store/slices/notifications-slice";
 import { copySuccess, resetSuccess } from "../utils/noticationContent";
 import { useParams } from "react-router-dom";
-
+import { motion } from "framer-motion";
 import { AppDispatch } from "../app/store/store";
 import { ControlBoxProps } from "../types";
 
@@ -31,16 +31,30 @@ const ControlBox: React.FC<ControlBoxProps> = ({ title, userName }) => {
     <div className="control-cmp">
       <h4 className="lesson-title">{title}</h4>
       <div className="control-box">
-        <TbCopy
-          className="copy-svg"
-          title="Copy to clipboard"
-          onClick={copyAddress}
-        />
-        <GrPowerReset
-          className="reset-svg"
-          title="Reset back to the start"
-          onClick={resetLesson}
-        />
+        <motion.div
+          style={{ display: "flex" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          <TbCopy
+            className="copy-svg"
+            title="Copy to clipboard"
+            onClick={copyAddress}
+          />
+        </motion.div>
+        <motion.div
+          style={{ display: "flex" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          <GrPowerReset
+            className="reset-svg"
+            title="Reset back to the start"
+            onClick={resetLesson}
+          />
+        </motion.div>
       </div>
     </div>
   );
