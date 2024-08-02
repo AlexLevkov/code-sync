@@ -57,8 +57,9 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
               <h4>
                 Welcome <FaHand className="hello-icon" />
               </h4>
-              <h5>Please enter your name</h5>
+              <h5 className="modal-sub-title" >Please enter your name</h5>
               <Form.Control
+                className="modal-input-field"
                 type="text"
                 placeholder="Your name"
                 value={inputValue}
@@ -71,7 +72,7 @@ const UserModal: React.FC<UserModalProp> = ({ onUserNameSubmit, userName }) => {
                   Back
                 </Button>
                 <Button
-                  variant="dark"
+                  variant=""
                   type="submit"
                   className="btn-join"
                   disabled={!inputValue.trim()}

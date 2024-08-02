@@ -20,10 +20,15 @@
   .copy-svg {
     font-size: 27px;
   }
+}
 
-  svg:hover {
+.control-btn {
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.15s ease-in-out;
+  &:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    background-color: rgba($color: white, $alpha: 0.2);
   }
 }
 

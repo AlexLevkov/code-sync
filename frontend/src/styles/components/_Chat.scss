@@ -22,6 +22,14 @@
   input {
     width: 80%;
     height: 30px;
+    background-color: $clr2;
+    border: none;
+    color: white;
+    &:focus {
+      box-shadow: 0 0 1px 1px white;
+      background-color: $clr2;
+      color: white;
+    }
   }
 }
 
