@@ -3,13 +3,13 @@
   height: 220px;
   min-width: 300px;
   background-color: $clr2;
-  padding: 20px;
+  padding: 15px 20px;
 
   .title-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -32,10 +32,13 @@
     height: 70%;
   }
 
-  // &:hover{
-  //   // box-shadow: 1px 1px 1px 1px $clr4;
-  //   box-shadow: 0px 0px 1px 1px grey;
-  // }
+  pre::-webkit-scrollbar,
+  .CodeMirror::-webkit-scrollbar,
+  .CodeMirror-scrollbar-filler,
+  .CodeMirror-vscrollbar,
+  .CodeMirror-hscrollbar {
+    display: none !important;
+  }
 }
 
 .settings-icon {
@@ -60,6 +63,5 @@
   }
   .lesson-preview-item {
     height: 180px;
-    width: 80vw;
   }
 }

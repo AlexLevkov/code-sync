@@ -21,16 +21,18 @@ const App: React.FC = () => {
   }, [dispatch]);
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Lobby />} />
-        <Route path="/room/:id" element={<Room />} />
-        <Route path="/edit/:id?" element={<EditPage />} />
-        <Route path="/*" element={<NotFoundPage />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Lobby />} />
+          <Route path="/room/:id" element={<Room />} />
+          <Route path="/edit/:id?" element={<EditPage />} />
+          <Route path="/*" element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 };
 

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  width: 90vw;
   height: 60vh;
 }
 
@@ -15,13 +14,19 @@
   height: 60vh;
   width: 30vw;
   border-radius: 15px;
+  position: relative;
 }
 
 .code-section {
-  max-width: 55vw;
+  // max-width: 55vw;
 }
 
-@media (max-width: 600px) {
+.CodeMirror-scrollbar-filler {
+  // display: none !important;
+  background-color: $clr3;
+}
+
+@media (max-width: 1024px) {
   .lesson-wrapper {
     flex-direction: column;
     height: 100%;

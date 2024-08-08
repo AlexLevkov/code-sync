@@ -5,7 +5,7 @@
   border-radius: 15px 15px 0 0;
   position: absolute;
   max-height: 40vh;
-  width: 30vw;
+  width: 100%;
   z-index: 100;
   overflow-y: scroll;
   border-bottom: 1px #a79e85 solid;
@@ -53,7 +53,7 @@
 
 @media (max-width: 600px) {
   .par-cmp {
-    width: 90vw;
+    width: 100%;
     max-height: 30vh;
   }
 }

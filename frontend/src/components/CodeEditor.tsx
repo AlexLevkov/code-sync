@@ -43,7 +43,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
     theme: "monokai",
     lineNumbers: true,
     lineWrapping: false,
-    autoScroll: false,
+    autoScroll: true,
     lint: false,
     extraKeys: {
       Enter: function (cm: Editor) {

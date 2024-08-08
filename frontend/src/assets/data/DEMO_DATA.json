@@ -1,8 +1,8 @@
 [
   {
     "_id": "1",
-    "title": "Lesson x1",
-    "content": "1",
+    "title": "Sum Numbers",
+    "content": "function sumEvenNumbers(arr) { \n let sum = 0; \n for (let i = 0; i < arr.length; i++) { \n if (arr[i] % 2 !== 0) { \n sum += arr[i]; \n } \n } \n return sum \n } \n return sum; ",
     "solution": "2"
   },
   {

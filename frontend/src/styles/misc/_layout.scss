@@ -1,24 +1,22 @@
-#root {
+.app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: auto;
+  padding-inline: 7%;
 }
 
 .main-title {
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 15px;
 }
 
 .sub-title {
   text-align: center;
-  margin-top: 15px;
   a {
     text-decoration: underline;
   }
-}
-
-.main-layout {
-  margin: 1.5% 10% 0;
 }
 
 .loading {

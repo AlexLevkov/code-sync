@@ -32,22 +32,17 @@ const ControlBox: React.FC<ControlBoxProps> = ({ title, userName }) => {
     <div className="control-cmp">
       <h4 className="lesson-title">{title}</h4>
       <div className="control-box">
-        <div className="control-btn">
+        <motion.div className="control-btn" onClick={resetLesson}>
           <motion.div style={{ display: "flex" }} whileTap={{ scale: 0.9 }}>
             <GrPowerReset
               className="reset-svg"
               title="Reset back to the start"
-              onClick={resetLesson}
             />
           </motion.div>
-        </div>
-        <div className="control-btn">
+        </motion.div>
+        <div className="control-btn" onClick={copyAddress}>
           <motion.div style={{ display: "flex" }} whileTap={{ scale: 0.9 }}>
-            <HiOutlineLink
-              className="copy-svg"
-              title="Copy to clipboard"
-              onClick={copyAddress}
-            />
+            <HiOutlineLink className="copy-svg" title="Copy to clipboard" />
           </motion.div>
         </div>
       </div>
