@@ -8,3 +8,9 @@
 .animated-code-cmp {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .lessons-preview-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
