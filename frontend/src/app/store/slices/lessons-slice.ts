@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Lesson } from "@/types";
+import { Lesson } from "../../../types";
 
 const lessonsSlice = createSlice({
   name: "Lessons",

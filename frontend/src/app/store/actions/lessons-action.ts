@@ -1,9 +1,8 @@
-import DEMO_DATA from "../../../assets/data/DEMO_DATA.json";
+// import DEMO_DATA from "../../../assets/data/DEMO_DATA.json";
 import { lessonActions } from "../slices/lessons-slice";
 import { notificationActions } from "../slices/notifications-slice";
 import { AppDispatch } from "../store";
-import { Lesson } from "@/types";
-import { Store } from "react-notifications-component";
+import { Lesson } from "../../../types";
 import { axiosService } from "../../../services/http-client";
 import { SaveLessonArgs } from "../../../types";
 
@@ -11,7 +10,6 @@ import {
   updateSuccess,
   sendingRequest,
   updateError,
-  deleteError,
   createSuccess,
   deleteSuccess,
 } from "../../../utils/noticationContent";
