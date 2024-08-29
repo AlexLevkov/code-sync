@@ -4,6 +4,12 @@ export type Lesson = {
   content: string;
 };
 
+export type Script = {
+  content: string;
+  result?: string;
+  error?: string;
+};
+
 export type LessonPreviewProps = {
   lesson: Lesson;
 };
@@ -24,6 +30,9 @@ export type RootState = {
   };
   notifications: {
     notification: { isInit: boolean };
+  };
+  scripts: {
+    script: Script;
   };
 };
 
@@ -65,8 +74,7 @@ export type DeleteModalProps = {
 };
 
 export type ControlBoxProps = {
-  title: string;
-  userName: string;
+  lesson: Lesson;
 };
 
 export type SaveLessonArgs = {

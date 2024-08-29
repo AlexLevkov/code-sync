@@ -1,12 +1,49 @@
 .lesson-wrapper {
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  // justify-content: space-between;
+  gap: 30px;
   height: 60vh;
 }
 
+.code-section {
+  display: flex;
+  gap: 30px;
+  overflow: scroll;
+  flex: 9;
+  scrollbar-width: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.react-codemirror2 {
+  height: 70vh;
+}
+
+.output-box {
+  font-family: monospace;
+  padding: 20px;
+  white-space: pre-wrap;
+  background-color: #1d2324;
+  // border: 1px solid white;
+  height: 30vh;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.output-title {
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.output-result {
+  color: #dadada;
+}
+
 .chat-par-section {
+  flex: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

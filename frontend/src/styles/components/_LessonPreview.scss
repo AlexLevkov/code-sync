@@ -20,9 +20,24 @@
   a {
     position: relative;
     z-index: 10;
+
     pre {
       user-select: none;
       cursor: pointer;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 4px 4px 4px;
+      border-radius: 50%;
+      &:hover {
+        background-color: rgba($color: white, $alpha: 0.2);
+        svg {
+          animation: rotate 3s linear infinite;
+        }
+      }
     }
   }
 
@@ -43,9 +58,6 @@
 
 .settings-icon {
   font-size: 1.2rem;
-  &:hover {
-    animation: rotate 3s linear infinite;
-  }
 }
 
 @keyframes rotate {

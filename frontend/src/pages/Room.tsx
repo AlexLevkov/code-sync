@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { lessonActions } from "../app/store/slices/lessons-slice.ts";
 import { userActions } from "../app/store/slices/users-slice.ts";
+import { scriptActions } from "../app/store/slices/scripts-slice.ts";
 import ParBox from "../components/ParBox";
 import Chat from "../components/Chat.tsx";
 import CodeEditor from "../components/CodeEditor.tsx";
@@ -20,6 +21,11 @@ const Room: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]); // chat messages
 
   const userName = useSelector((state: RootState) => state.users.userName);
+  const script = useSelector((state: RootState) => state.scripts.script);
+
+  // console.log("scripts:", scripts);
+  // const scripts = useSelector((state: RootState) => state.scripts.scripts);
+  // const { lessonList, error } = useSelector((state: RootState) => state.lessons  );
 
   const lesson = useSelector((state: RootState) =>
     state.lessons.lessonList.find((lesson) => lesson._id === id)
@@ -41,6 +47,7 @@ const Room: React.FC = () => {
 
     return () => {
       socketService.disconnect();
+      dispatch(scriptActions.addResult(""));
     };
   }, []);
 
@@ -73,17 +80,25 @@ const Room: React.FC = () => {
     <div>
       <UserModal userName={userName} onUserNameSubmit={handleUserUpdate} />
       <div className="animate__animated animate__fadeIn  ">
-        <ControlBox title={lesson?.title} userName={userName} />
+        <ControlBox lesson={lesson} />
         <div className="lesson-wrapper">
-          <CodeEditor
-            content={lesson?.content}
-            onCodeChange={handleCodeChange}
-            lesson={lesson}
-          />
-          <div className="chat-par-section">
+          <section className="code-section">
+            <CodeEditor
+              content={lesson?.content}
+              onCodeChange={handleCodeChange}
+              lesson={lesson}
+            />
+            <div className="output-box">
+              <h4 className="output-title">
+                Execution Result (Powered by Piston API)
+              </h4>
+              <p className="output-result">{script?.result}</p>
+            </div>
+          </section>
+          <section className="chat-par-section">
             <ParBox userArr={userArr} />
             <Chat onChatMessage={handleChatMessage} messages={messages} />
-          </div>
+          </section>
         </div>
       </div>
     </div>

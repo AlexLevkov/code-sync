@@ -19,20 +19,22 @@ const LessonPreview: React.FC<LessonPreviewProps> = ({ lesson }) => {
       <motion.div
         className="lesson-preview-item"
         whileHover={{
-          y: [0, 2, -4], 
+          y: [0, 2, -4],
           x: [0, -2, 4],
           transition: {
-            duration: 0.3, 
+            duration: 0.3,
             ease: "easeInOut",
           },
         }}
-        style={{ y: 0, x: 0 }} 
+        style={{ y: 0, x: 0 }}
       >
         <Link to={"/room/" + lesson._id}>
           <div className="title-box">
             <h5>{lesson.title}</h5>
             <Link to={"/edit/" + lesson._id}>
-              <GoGear className="settings-icon" />
+              <div className="icon-wrapper">
+                <GoGear className="settings-icon" />
+              </div>
             </Link>
           </div>
           <CodeEditor

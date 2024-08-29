@@ -5,6 +5,9 @@ import "codemirror/theme/monokai.css";
 import "codemirror/mode/javascript/javascript";
 import { CodeEditorProps } from "../types";
 import { Editor } from "codemirror";
+import { useSelector, useDispatch } from "react-redux";
+import { AppDispatch } from "../app/store/store";
+import { scriptActions } from "../app/store/slices/scripts-slice";
 
 const CodeEditor: React.FC<CodeEditorProps> = ({
   content,
@@ -16,10 +19,15 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
   const [localContent, setLocalContent] = useState<string>("");
   const [isUpdate, setIsUpdate] = useState<boolean>(false);
 
+  const dispatch = useDispatch<AppDispatch>();
+
   useEffect(() => {
     if (localContent && isUpdate && onCodeChange) {
       onCodeChange("content", localContent);
       setIsUpdate(false);
+    }
+    if (localContent) {
+      dispatch(scriptActions.addContent({ content: localContent }));
     }
   }, [localContent, isUpdate]);
 
