@@ -14,6 +14,10 @@ const scriptsSlice = createSlice({
     addResult(state, action) {
       state.script.result = action.payload;
     },
+    changeLoadingState(state, action) {
+      const { isLoading } = action.payload;
+      state.script.isLoading = isLoading;
+    },
   },
 });
 

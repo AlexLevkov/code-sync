@@ -8,7 +8,7 @@
 
 .code-section {
   display: flex;
-  gap: 30px;
+  border-radius: 15px 15px 0 0;
   overflow: scroll;
   flex: 9;
   scrollbar-width: none;
@@ -18,16 +18,17 @@
 
 .react-codemirror2 {
   height: 70vh;
+  // max-height: 100%;
 }
 
 .output-box {
   font-family: monospace;
-  padding: 20px;
+  padding: 0 20px;
   white-space: pre-wrap;
-  background-color: #1d2324;
+  background-color: $clr3;
   // border: 1px solid white;
   height: 30vh;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   overflow: auto;
 }
 

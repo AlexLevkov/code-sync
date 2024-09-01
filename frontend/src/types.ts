@@ -8,6 +8,7 @@ export type Script = {
   content: string;
   result?: string;
   error?: string;
+  isLoading?: boolean;
 };
 
 export type LessonPreviewProps = {
@@ -33,6 +34,7 @@ export type RootState = {
   };
   scripts: {
     script: Script;
+    isLoading: boolean;
   };
 };
 

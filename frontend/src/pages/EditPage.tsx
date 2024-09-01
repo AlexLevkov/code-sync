@@ -37,7 +37,7 @@ const EditPage: React.FC = () => {
       setLessonToEdit({
         _id: "",
         title: "",
-        content: "\n\n\n\n\n\n\n\n\n",
+        content: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       });
     }
   }, [lesson]);

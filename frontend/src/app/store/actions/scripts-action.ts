@@ -34,6 +34,7 @@ export const fetchScript = (script: Script) => {
       };
 
       try {
+        dispatch(scriptActions.changeLoadingState({ isLoading: true }));
         const response = await axios.post(END_POINT_URL, body);
         const data: any = response.data || [];
         return data;
@@ -45,6 +46,7 @@ export const fetchScript = (script: Script) => {
     const response = await fetchData();
     const data = response.run.stdout;
     const error = response.run.code;
+    dispatch(scriptActions.changeLoadingState({ isLoading: false }));
     if (data) dispatch(scriptActions.addResult(data));
     if (error) dispatch(scriptActions.addResult("Error executing"));
   };

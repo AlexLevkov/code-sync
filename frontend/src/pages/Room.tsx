@@ -8,6 +8,7 @@ import { scriptActions } from "../app/store/slices/scripts-slice.ts";
 import ParBox from "../components/ParBox";
 import Chat from "../components/Chat.tsx";
 import CodeEditor from "../components/CodeEditor.tsx";
+import ExecutionLoader from "../components/ExecutionLoader.tsx";
 import ControlBox from "../components/ControlBox";
 import UserModal from "../components/UserModal.tsx";
 import { Message, User, Lesson, RootState } from "../types.ts";
@@ -92,6 +93,7 @@ const Room: React.FC = () => {
               <h4 className="output-title">
                 Execution Result (Powered by Piston API)
               </h4>
+              {script.isLoading && <ExecutionLoader />}
               <p className="output-result">{script?.result}</p>
             </div>
           </section>
