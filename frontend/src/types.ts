@@ -36,7 +36,9 @@ export type RootState = {
     script: Script;
     isLoading: boolean;
   };
-  presences: Presence[];
+  presences: {
+    presenceArr: Presence[];
+  };
 };
 
 export type CodeEditorProps = {
