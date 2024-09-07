@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const LessonPreview: React.FC<LessonPreviewProps> = ({ lesson }) => {
   const customOptions = {
     lineNumbers: false,
+    styleSelectedText: false,
     readOnly: true,
     extraKeys: {
       Tab: false,

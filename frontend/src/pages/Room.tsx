@@ -3,6 +3,7 @@ import socketService from "../services/socket-client.ts";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { lessonActions } from "../app/store/slices/lessons-slice.ts";
+import { presencesActions } from "../app/store/slices/presences-slice.ts";
 import { userActions } from "../app/store/slices/users-slice.ts";
 import { scriptActions } from "../app/store/slices/scripts-slice.ts";
 import ParBox from "../components/ParBox";
@@ -24,10 +25,6 @@ const Room: React.FC = () => {
   const userName = useSelector((state: RootState) => state.users.userName);
   const script = useSelector((state: RootState) => state.scripts.script);
 
-  // console.log("scripts:", scripts);
-  // const scripts = useSelector((state: RootState) => state.scripts.scripts);
-  // const { lessonList, error } = useSelector((state: RootState) => state.lessons  );
-
   const lesson = useSelector((state: RootState) =>
     state.lessons.lessonList.find((lesson) => lesson._id === id)
   ) as Lesson;
@@ -46,19 +43,23 @@ const Room: React.FC = () => {
       setUserArr((pv) => [...userArr]);
     });
 
-    return () => {
-      socketService.disconnect();
-      dispatch(scriptActions.addResult(""));
-    };
-  }, []);
+    socketService.on("line:update", ({ userName, currPos, _id }) => {
+      const presenceData = { userName, currPos, _id };
+      dispatch(presencesActions.addPresence(presenceData));
+    });
 
-  useEffect(() => {
     if (userName) {
       socketService.emit("room:join", lesson.title, { userName });
     }
+
+    return () => {
+      handleLineChange({ start: { line: -1 } });
+      socketService.disconnect();
+      dispatch(scriptActions.addResult(""));
+    };
   }, [userName]);
 
-  const handleCodeChange = (_: unknown, content: string) => {
+  const handleCodeChange = (_: any, content: string) => {
     const title = lesson?.title;
     if (lesson) {
       socketService.emit("code:update", lesson.title, {
@@ -69,10 +70,19 @@ const Room: React.FC = () => {
     }
   };
 
+  const handleLineChange = (currPos: any) => {
+    socketService.emit("line:update", lesson?.title, {
+      userName,
+      currPos,
+      _id: lesson?._id,
+    });
+  };
+
   const handleChatMessage = (message: string) => {
     setMessages((pv) => [...pv, { message, userName }]);
     socketService.emit("chat:update", lesson.title, { userName, message });
   };
+
   const handleUserUpdate = (userName: string) => {
     dispatch(userActions.addUser(userName));
   };
@@ -87,14 +97,18 @@ const Room: React.FC = () => {
             <CodeEditor
               content={lesson?.content}
               onCodeChange={handleCodeChange}
+              onLineChange={handleLineChange}
               lesson={lesson}
             />
             <div className="output-box">
               <h4 className="output-title">
                 Execution Result (Powered by Piston API)
               </h4>
-              {script.isLoading && <ExecutionLoader />}
-              <p className="output-result">{script?.result}</p>
+              {script.isLoading ? (
+                <ExecutionLoader />
+              ) : (
+                <p className="output-result">{script?.result}</p>
+              )}
             </div>
           </section>
           <section className="chat-par-section">

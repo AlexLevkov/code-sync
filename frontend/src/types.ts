@@ -36,12 +36,14 @@ export type RootState = {
     script: Script;
     isLoading: boolean;
   };
+  presences: Presence[];
 };
 
 export type CodeEditorProps = {
   content: string;
   customOptions?: {};
   onCodeChange?: (arg0: string, arg1: string) => void;
+  onLineChange?: (arg0: CurrPos) => void;
   lesson?: Lesson;
 };
 
@@ -85,4 +87,29 @@ export type SaveLessonArgs = {
 
 export type StatusMessageProps = {
   error: boolean;
+};
+
+export type CurrPos = {
+  start?: {
+    ch: number;
+    line: number;
+    sticky?: string;
+    xRel?: number;
+  };
+  end: {
+    ch: number;
+    line: number;
+    sticky?: string;
+    xRel?: number;
+  };
+};
+
+export type UserPos = {
+  userName: string;
+  currPos: CurrPos;
+};
+
+export type Presence = {
+  _id: string;
+  users: UserPos[];
 };

@@ -16,6 +16,27 @@ type CodeUpdate = {
   _id: string;
 };
 
+type PossUpdate = {
+  userName: string;
+  currPos: CurrPos;
+  _id: string;
+};
+
+type CurrPos = {
+  start?: {
+    ch: number;
+    line: number;
+    sticky?: string;
+    xRel?: number;
+  };
+  end: {
+    ch: number;
+    line: number;
+    sticky?: string;
+    xRel?: number;
+  };
+};
+
 export function setupSocket(io: Server) {
   let rooms: { [room: string]: User[] } = {};
 
@@ -40,7 +61,14 @@ export function setupSocket(io: Server) {
     });
 
     socket.on("code:update", (room, { title, content, _id }: CodeUpdate) => {
+      console.log("room:", room);
+      console.log("_id:", _id);
       socket.broadcast.to(room).emit("code:update", { title, content, _id });
+    });
+
+    socket.on("line:update", (room, { userName, currPos, _id }: PossUpdate) => {
+      console.log("userName:", userName);
+      socket.broadcast.to(room).emit("line:update", { userName, currPos, _id });
     });
 
     socket.on("disconnecting", () => {

@@ -1,0 +1,122 @@
+// Sum Numbers
+
+function sumEvenNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let result = sumEvenNumbers(numbers);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+// No Repeat
+
+function firstNonRepeat(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return str[i];
+    }
+  }
+  return null;
+}
+
+let string = "swiss";
+let firstUnique = firstNonRepeat(string);
+console.log(firstUnique); 
+
+
+
+
+
+
+
+
+
+
+
+
+// Average Age
+
+function averageAge(people) {
+  let sum = 0;
+  for (let i = 0; i < people.length; i++) {
+    sum += people[i].age;
+  }
+  return sum / people.length;
+}
+
+let peopleArray = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 }
+];
+let avgAge = averageAge(peopleArray);
+console.log(avgAge); 
+
+
+
+
+
+
+
+
+
+
+
+
+// Count Vowels
+
+function countVowels(str) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) count++;
+  }
+  return count;
+}
+
+let text = "Hello World";
+let vowelCount = countVowels(text);
+console.log(vowelCount); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Say Hello
+
+const sayHello = () => {
+  console.log("Hello CodeSync!");
+};
+
+sayHello()
+
+

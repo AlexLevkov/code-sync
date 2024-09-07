@@ -17,7 +17,7 @@
 }
 
 .react-codemirror2 {
-  height: 70vh;
+  height: 65vh;
   // max-height: 100%;
 }
 
@@ -34,9 +34,9 @@
 
 .output-title {
   font-size: 20px;
-  border-bottom: 1px solid grey;
-  padding-bottom: 5px;
   margin-bottom: 10px;
+  border-top: 1px solid grey;
+  padding-top: 10px;
 }
 
 .output-result {
@@ -70,11 +70,19 @@
     height: 100%;
     margin-bottom: 60px;
   }
+
+  .react-codemirror2 {
+    height: 40vh;
+  }
+
+  .output-box {
+    height: 20vh;
+  }
+
   .chat-par-section,
   .chat-cmp {
     width: auto;
   }
-
   .chat-par-section {
     height: 40vh;
   }
